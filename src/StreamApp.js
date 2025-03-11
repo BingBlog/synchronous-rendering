@@ -14,7 +14,7 @@ function StreamApp() {
         setConnectionStatus('connecting');
         abortControllerRef.current = new AbortController();
         
-        const response = await fetch('http://localhost:7001/api/stream', {
+        const response = await fetch('http://localhost:7002/api/stream', {
           credentials: 'include',
           signal: abortControllerRef.current.signal
         });

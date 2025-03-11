@@ -14,7 +14,7 @@ function SSEApp() {
         setConnectionStatus('connecting');
         
         // Create new EventSource connection
-        eventSourceRef.current = new EventSource('http://localhost:7001/api/sse', {
+        eventSourceRef.current = new EventSource('http://localhost:7002/api/sse', {
           withCredentials: true
         });
 
